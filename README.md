@@ -59,5 +59,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- Website [your-website.com](https://www.linkedin.com/in/victor-casanova-romero)
-- GitHub [@your-username](https://{github.com/victorcr87})
+- Website [linkedin.com/in/victor-casanova-romero](https://www.linkedin.com/in/victor-casanova-romero)
+- GitHub [@victorcr87](https://{github.com/victorcr87})
