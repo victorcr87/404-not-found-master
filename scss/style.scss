@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@600&family=Space+Mono:wght@400;700&display=swap");
+@mixin mobile {
+  @media (max-width: 850px) {
+    @content;
+  }
+}
+:root {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  color: #333333;
+  font-weight: 400;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  @include mobile {
+    grid-template-rows: auto auto auto;
+    height: auto;
+  }
+}
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  @include mobile {
+    grid-template-columns: auto;
+  }
+}
+.not-found {
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -0.08em;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+.scarecrow {
+  width: 40vw;
+  @include mobile {
+    margin-top: 20px;
+    width: 80vw;
+  }
+}
+.info {
+  justify-self: left;
+  letter-spacing: -0.035em;
+  @include mobile {
+    justify-self: center;
+    margin-left: 24px;
+  }
+}
+.heading {
+  font-size: 64px;
+  max-width: 600px;
+  @include mobile {
+    font-size: 48px;
+  }
+}
+.description {
+  color: #4f4f4f;
+  max-width: 400px;
+  margin-top: 36px;
+  margin-bottom: 64px;
+  @include mobile {
+    font-size: 18px;
+  }
+}
+.back-button {
+  color: white;
+  background-color: #333333;
+  font-size: 14px;
+  padding: 23px 43px;
+}
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 2%;
+  @include mobile {
+    margin-top: 100px;
+  }
+}
+a {
+  text-decoration: none;
+  color: #333333;
+}
